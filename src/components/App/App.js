@@ -1,10 +1,12 @@
 import React from 'react';
+import CallStack from "../CallStack";
+import { callStackData } from "../../data";
 
 import './App.css';
 
 const App = () => (
     <div className="app">
-        Javascript under the hood
+        <CallStack data={callStackData} />
     </div>
 );
 
