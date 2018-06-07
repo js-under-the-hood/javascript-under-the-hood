@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-type';
 import MemberPhoto from '../MemberPhoto';
 import MemberName from '../MemberName';
 import MemberEmail from '../MemberEmail';
@@ -16,6 +17,14 @@ const Member = ({data}) => {
             </div>
         </div>
     );
+};
+
+Member.propTypes = {
+    className: PropTypes.string,
+    key: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    href: PropTypes.string.isRequired,
 };
 
 export default Member;
