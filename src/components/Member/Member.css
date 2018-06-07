@@ -1,0 +1,32 @@
+.member {
+    width: 320px;    
+    background-color:#CAE9FD;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    padding: 5px;
+}
+
+.memberInfoContainer {
+    vertical-align: middle;
+    width:210px;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+}
+
+.memberPhoto {
+    vertical-align: middle;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.memberName {
+    color: #3572A5;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
