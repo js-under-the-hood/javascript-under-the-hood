@@ -1,0 +1,22 @@
+.github-logo {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    padding: 15px;
+}
+.github-logo span {
+   margin-right: 5px;
+    font-size: 18px;
+    color: #2a2d98;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.github-logo img {
+    width: 25px;
+    vertical-align: middle;
+}
