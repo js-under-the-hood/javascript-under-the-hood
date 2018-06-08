@@ -1,0 +1,14 @@
+.title {
+    color: #004696;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
+
+.title.uppercase {
+    text-transform: uppercase;
+}
+
+.title.standard::first-letter {
+    text-transform: uppercase;
+}
