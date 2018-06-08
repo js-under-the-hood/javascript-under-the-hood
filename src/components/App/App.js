@@ -1,11 +1,12 @@
-import React from 'react';
-import Header from "../Header/Header";
+import React from "react";
+import Header from "../HeaderContainer";
+import headerData from "../../data/headerData";
 
-import './App.css';
+import "./App.css";
 
 const App = () => (
     <div className="app">
-        <Header />
+        <Header data={headerData}/>
     </div>
 );
 
