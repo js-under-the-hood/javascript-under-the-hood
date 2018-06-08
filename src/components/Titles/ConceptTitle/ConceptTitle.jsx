@@ -12,7 +12,7 @@ const ConceptTitle = ({ value }) => (
 );
 
 ConceptTitle.propTypes = {
-    value: PropTypes.string.isRequired
+    value: PropTypes.string.isRequired,
 };
 
 export default ConceptTitle;
