@@ -5,7 +5,7 @@ import './MemberEmail.css';
 const MemberEmail = ({ email }) => {
     return (
         <div>
-            <span className='memberEmail-title'>email:</span><span>{email}</span>
+            <span className='memberEmail-title'>email: </span><span>{email}</span>
         </div>
     );
 };

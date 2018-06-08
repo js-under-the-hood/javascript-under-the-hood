@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import gitHubUsers from './gitHubUsers'
-
 import Member from '../Member';
 
 class Members extends Component {
@@ -13,7 +12,7 @@ class Members extends Component {
 
     componentDidMount() {
         let { team } = this.state;
-        gitHubUsers.map(username => fetch(`https://api.github.com/users/${username}`)
+        gitHubUsers.map(user => fetch(`https://api.github.com/users/${user.username}`)
                         .then(resp => resp.json())
                         .then(member =>  team.push(member))
                         .then(resp => this.setState({resp})));        
@@ -21,11 +20,17 @@ class Members extends Component {
     
     render() {
         const {team} = this.state;
+        team.map(member => {
+            for (let i = 0; i < gitHubUsers.length; i++) {
+                if (gitHubUsers[i].username === member.login) {
+                    member.email = gitHubUsers[i].email;
+                }
+        }})
         return (
             <div>
+                <h1>OUR TEAM</h1>
                 {
-                    team.map(member => <Member data={member} />
-                    )
+                    team.map(member => <Member data={member} />)
                 }
             </div>       
         );
