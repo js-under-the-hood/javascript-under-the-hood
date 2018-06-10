@@ -1,0 +1,37 @@
+.callStackFrame {
+    height: 40px;
+    width: 294px;
+    background-color: #0f7efd;
+    margin: 3px auto;
+    margin-top: 0;
+    border-radius: 4px;
+    color: #c9e2ff;
+    font-size: 24px;
+}
+
+.callStackFrame.transparent {
+    background-color: transparent;
+}
+
+.callStackFrame .frameId {
+    height: 36px;
+    width: 36px;
+    background: #004696;
+    border-radius: 50%;
+    float: left;
+    margin: 2px;
+    line-height: 36px;
+}
+
+.callStackFrame .frameName {
+    width: 254px;
+    line-height: 40px;
+}
+
+.callStackFrame.transparent .frameId {
+    visibility: hidden;
+}
+
+.callStackFrame.transparent .frameName {
+    color: #004696;
+}
