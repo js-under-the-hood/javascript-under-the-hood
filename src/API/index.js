@@ -1,6 +1,6 @@
 const gitHubUserFetch = (username) => {
     return fetch(`https://api.github.com/users/${username}`, {
-        headers: {'Authorization': 'token 24ece0ab7d626b6c14561eec2e059a1b29b872ce'}
+        headers: {'Authorization': 'token 662fe928bf7315723de5209057bcc2e63bcf78e6'}
     })
 };
 
