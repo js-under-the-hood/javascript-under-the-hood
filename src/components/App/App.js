@@ -1,12 +1,9 @@
-import React from "react";
-import Header from "../HeaderContainer";
-import headerData from "../../data/headerData";
-
-import "./App.css";
+import React from 'react';
+import './App.css';
 
 const App = () => (
     <div className="app">
-        <Header data={headerData}/>
+        JS
     </div>
 );
 
