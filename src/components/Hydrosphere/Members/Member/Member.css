@@ -1,0 +1,44 @@
+.member {
+    width: 540px;    
+    background-color:#c7e9fb;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 15px 30px 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.memberPhoto {
+    height: 140px;
+    width: 140px;
+}
+
+.memberInfoContainer {
+    width: 357px;
+    padding: 20px 0;
+}
+
+.gitHubAccount {
+    color: #004696;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+@media (max-width: 575.98px) {
+    .memberPhoto {
+        height: 80px;
+        width: 80px;
+    }
+
+    .memberInfoContainer {
+        padding: 5px 0;
+    }
+
+    .member {
+        margin: 0 15px 10px 15px;
+        padding: 5px;
+    }
+}

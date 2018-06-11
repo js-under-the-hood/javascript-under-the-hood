@@ -1,0 +1,166 @@
+.fishes {
+    height: 450px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes fishAnim {
+    0% {
+        background-position-y: 0%;
+    }
+    100% {
+        background-position-y: -100%;
+    }
+}
+
+.Nemo {
+    top: 120px;
+    animation: fishAnim 0.9s steps(12) infinite, NemoAnim 30s linear infinite;
+}
+
+@keyframes NemoAnim {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.Marlin {
+    top: 250px;
+    z-index: 3;
+    transform: scale(-1, 1);
+    animation: fishAnim 0.8s steps(12) infinite, MarlinAnim 25s linear infinite;
+}
+
+@keyframes MarlinAnim {
+    0% {
+        left: 45%;
+    }
+    50% {
+        opacity: 1;
+        left: -100px;
+    }
+    51% {
+        opacity: 0;
+        left: -100px;
+    }
+    52% {
+        opacity: 0;
+        left: 100%;
+    }
+    53% {
+        opacity: 1;
+        left: 100%;
+    }
+    100% {
+        left: 45%;
+    }
+}
+
+.Coral {
+    top: 5px;
+    transform: scale(-1, 1);
+    animation: fishAnim 1s steps(12) infinite, CoralAnim 40s linear infinite;
+}
+
+@keyframes CoralAnim {
+    0% {
+        left: 80%;
+    }
+    80% {
+        left: -100px;
+        opacity: 1;
+    }
+    81% {
+        left: -100px;
+        opacity: 0;
+    }
+    82% {
+        left: 100%;
+        opacity: 0;
+    }
+    83% {
+        left: 100%;
+        opacity: 1;
+    }
+    100% {
+        left: 80%;
+    }
+}
+
+.Nemra {
+    top: 380px;
+    animation: fishAnim 0.7s steps(12) infinite, NemraAnim 20s linear infinite;
+}
+
+@keyframes NemraAnim {
+    0% {
+        left: 20%;
+    }
+    80% {
+        left: 100%;
+        opacity: 1;
+    }
+    81% {
+        left: 100%;
+        opacity: 0;
+    }
+    82% {
+        left: -100px;
+        opacity: 0;
+    }
+    83% {
+        left: -100px;
+        opacity: 1;
+    }
+    100% {
+        left: 20%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fishes {
+        height: 120px;
+    }
+
+    .Nemo {
+        top: 28px;
+    }
+
+    .Marlin {
+        top: 66px;
+    }
+
+    .Coral {
+        top: 0px;
+    }
+
+    .Nemra {
+        top: 95px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .fishes {
+        height: 280px;
+    }
+
+    .Nemo {
+        top: 65px;
+    }
+
+    .Marlin {
+        top: 155px;
+    }
+
+    .Coral {
+        top: 5px;
+    }
+
+    .Nemra {
+        top: 230px;
+    }
+}

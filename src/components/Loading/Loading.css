@@ -1,0 +1,36 @@
+.loading {
+    font-size: 24px;
+    margin: 10px auto;
+    color: #004696;
+    cursor: default;
+}
+
+.loading .dot {
+    animation: load 1.4s infinite;
+}
+
+.loading .dot:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.loading .dot:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .loading {
+        font-size: 18px;
+    }
+}

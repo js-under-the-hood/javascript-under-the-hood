@@ -1,0 +1,33 @@
+.concept {
+    position: relative;
+    width: 700px;
+    background-color: #C7E9FB;
+    border: 8px solid #004696;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+}
+
+.conceptText {
+    padding: 5px 14px;
+}
+
+@media (max-width: 575.98px) {
+    .concept {
+        margin-bottom: 8px;
+        border: 3px solid #004696;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .concept {
+        margin-bottom: 20px;
+        width: 570px;
+        border: 6px solid #004696;
+        border-radius: 10px;
+    }
+}

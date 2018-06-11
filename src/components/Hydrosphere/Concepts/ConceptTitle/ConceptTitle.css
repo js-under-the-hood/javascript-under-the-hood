@@ -1,0 +1,17 @@
+.conceptTitle {
+    font-size: 42px;
+    font-weight: bold;
+    cursor: default;
+}
+
+@media (max-width: 575.98px) {
+    .conceptTitle {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .conceptTitle {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,17 @@
+.emailContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.email, .emailValue {
+    font-size: 20px;
+}
+
+.email {
+    margin-right: 5px;
+    cursor: default;
+}
+
+.emailValue {
+    color: #000;
+}

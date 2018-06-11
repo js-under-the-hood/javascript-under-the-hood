@@ -1,0 +1,23 @@
+.text {
+    color: #002E68;
+    font-size: 26px;
+    line-height: 28px;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+@media (max-width: 575.98px) {
+    .text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .text {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,67 @@
+.github {
+    height: 100%;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+.githubLink {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.githubText {
+    margin-right: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2a2d98;
+}
+
+.githubLogoSVG {
+    height: 80%;
+}
+
+.github:hover {
+    background: #DFF3FD;
+}
+
+.github:hover .githubText {
+    color: #20A0DE;
+}
+
+.github:hover .githubLogoPath {
+    fill: #20A0DE;
+}
+
+@media (max-width: 575.98px) {
+    .github {
+        height: 30px;
+        padding: 0;
+        background: linear-gradient(to right, #178fca 0%, #20a0de 40%, #20a0de 60%, #178fca 100%);
+    }
+
+    .githubText {
+        display: none;
+    }
+
+    .github:hover {
+        background: linear-gradient(to right, #178fca 0%, #20a0de 40%, #20a0de 60%, #178fca 100%);
+    }
+
+    .github:hover .githubLogoPath {
+        fill: #004696;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .github  {
+        padding: 0 8px;
+    }
+
+    .githubText {
+        margin-right: 4px;
+        font-size: 24px;
+    }
+}

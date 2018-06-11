@@ -1,0 +1,77 @@
+.atmosphere {
+    height: 710px;
+    width: 100%;
+    background: linear-gradient(to bottom, #9adaf8 0%, #c7e9fb 100%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.atmosphereTitle {
+    margin-top: 235px;
+}
+
+.icebergJS {
+    position: absolute;
+    z-index: 5;
+    transform-origin: center;
+    animation: icebergAnim 1400ms ease-in-out infinite alternate;
+}
+
+@keyframes icebergAnim {
+    0% {
+        top: 170px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 185px;
+        transform: rotate(-1deg);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .atmosphere {
+        height: 280px;
+    }
+
+    .atmosphereTitle {
+        margin-top: 100px;
+    }
+
+    .icebergJS {
+        animation: icebergAnim 1000ms ease-in-out infinite alternate;
+    }
+
+    @keyframes icebergAnim {
+        0% {
+            top: 120px;
+            transform: rotate(0deg);
+        }
+        100% {
+            top: 125px;
+            transform: rotate(-1deg);
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .atmosphere {
+        height: 460px;
+    }
+
+    .atmosphereTitle {
+        margin-top: 150px;
+    }
+
+    @keyframes icebergAnim {
+        0% {
+            top: 100px;
+            transform: rotate(0deg);
+        }
+        100% {
+            top: 115px;
+            transform: rotate(-1deg);
+        }
+    }
+}

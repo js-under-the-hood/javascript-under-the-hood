@@ -1,0 +1,19 @@
+.subTitle {
+    font-size: 56px;
+    position: relative;
+    z-index: 40;
+    font-weight: bold;
+    cursor: default;
+}
+
+@media (max-width: 575.98px) {
+    .subTitle {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .subTitle {
+        font-size: 45px;
+    }
+}

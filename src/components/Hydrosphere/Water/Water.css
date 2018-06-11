@@ -1,0 +1,10 @@
+.water {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color:#00ADEE;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
