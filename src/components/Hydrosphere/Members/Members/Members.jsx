@@ -20,17 +20,21 @@ class Members extends Component {
         const usersCount = gitHubUsers.length;
         let successFetchCount = 0;
 
-        gitHubUsers.map(username => (
-            gitHubUserFetch(username)
-                .then(response => response.json())
-                .then(member => {
-                    successFetchCount++;
-                    team.push(member);
-                    if (successFetchCount === usersCount) {
-                        this.setState({ team, isLoading: false });
-                    }
-                })       
-        ));
+        fetch("http://5b1e64c24d4fc00014b07db2.mockapi.io/token")
+            .then(response => response.json())
+            .then(({token}) => {
+                gitHubUsers.map(username => (
+                    gitHubUserFetch(username, token)
+                        .then(response => response.json())
+                        .then(member => {
+                            successFetchCount++;
+                            team.push(member);
+                            if (successFetchCount === usersCount) {
+                                this.setState({ team, isLoading: false });
+                            }
+                        })       
+                ));
+            })
     }
     
     render() {
