@@ -2,7 +2,9 @@ import React from "react";
 import Atmosphere from "../Atmosphere";
 import Hydrosphere from "../Hydrosphere";
 
-import "./App.css";
+import styles from "./App.css";
+console.log(styles);
+//import "./App.css";
 
 const App = () => (
     <div className="app">
