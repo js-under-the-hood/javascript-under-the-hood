@@ -9,7 +9,9 @@ const Header = ({ data }) => (
     <header className="header">
         <Menu items={data.menuItems} />
         <GitHub link={data.gitHubLink} />
+        
     </header>
+
 );
 
 Header.propTypes = {
