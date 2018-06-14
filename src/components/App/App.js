@@ -7,7 +7,7 @@ import "./App.css";
 
 const App = () => (
     <div className="app">
-        <Header data={headerData}/>
+        <Header data={headerData} />
         <Footer />
     </div>
 );
