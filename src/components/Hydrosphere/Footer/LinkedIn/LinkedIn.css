@@ -1,0 +1,9 @@
+.linkedInButton {
+    width: 55px;
+    height: 55px;
+    background-image: url("./linkedin.png");
+    background-size: cover;
+    float: left;
+    cursor: pointer;
+    margin-right: 5px;
+}
