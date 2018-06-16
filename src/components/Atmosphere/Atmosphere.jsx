@@ -4,13 +4,16 @@ import Iceberg from "./Iceberg";
 import MainTitle from "./MainTitle";
 import { headerData, mainTitleValue } from "../../data/atmosphereData";
 
-import "./Atmosphere.css";
+import styles from "./Atmosphere.css";
 
 const Atmosphere = () => (
-    <div className="atmosphere">
-        <Iceberg className="icebergJS" />
+    <div className={styles.atmosphere}>
+        <Iceberg className={styles.icebergJS} />
         <Header data={headerData} />
-        <MainTitle containerClassName="atmosphereTitle" value={mainTitleValue} />
+        <MainTitle
+            containerClassName={styles.atmosphereTitle}
+            value={mainTitleValue}
+        />
     </div>
 );
 

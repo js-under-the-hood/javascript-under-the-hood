@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./Title.css";
+import styles from "./Title.css";
 
 const Title = ({ value, className, uppercase }) => {
-    const titleClassName = ["title", uppercase ? "uppercase" : "standard", className].join(" ").trim();
+    const titleClassName = [styles.title, uppercase ? styles.uppercase : styles.standard, className].join(" ").trim();
     return <h2 className={titleClassName}>{value}</h2>;
 };
 

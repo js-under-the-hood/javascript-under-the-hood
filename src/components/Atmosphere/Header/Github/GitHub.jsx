@@ -1,14 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import GitHubLogo from "./GitHubLogo";
 
-import './GitHub.css'
+import styles from "./GitHub.css";
 
 const GitHub = ({ link }) => (
-    <div className="github">
-        <a className="githubLink" href={link} target="_blank">
-            <span className="githubText">GitHub</span>
-            <GitHubLogo classNamePath="githubLogoPath" classNameSVG="githubLogoSVG"/>
+    <div className={styles.github}>
+        <a className={styles.githubLink} href={link} target="_blank">
+            <span className={styles.githubText}>GitHub</span>
+            <GitHubLogo
+                classNamePath={styles.githubLogoPath}
+                classNameSVG={styles.githubLogoSVG}
+            />
         </a>
     </div>
 );

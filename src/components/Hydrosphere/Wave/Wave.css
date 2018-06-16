@@ -11,12 +11,12 @@
 } 
 
 .waveBack {
-    background-image: url("./image/wave_1.png");
+    background-image: url("../../../assets/images/wave_1.png");
     animation: waveBackAnim 18s linear infinite;
 }
 
 .waveFront {
-    background-image: url("./image/wave_2.png");
+    background-image: url("../../../assets/images/wave_2.png");
     animation: waveFrontAnim 18s linear infinite;
     margin-top: -66px;
 }
@@ -30,6 +30,33 @@
 @keyframes waveFrontAnim {
     100% {
         background-position-x: 1152px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* --- */
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .waveBack,
+    .waveFront {
+        height: 55px;
+    } 
+
+    .waveFront {
+        margin-top: -55px;
+    }
+
+    @keyframes waveBackAnim {
+        100% {
+            background-position-x: -960px;
+        }
+    }
+    
+    @keyframes waveFrontAnim {
+        100% {
+            background-position-x: 960px;
+        }
     }
 }
 
@@ -52,29 +79,6 @@
     @keyframes waveFrontAnim {
         100% {
             background-position-x: 576px;
-        }
-    }
-}
-
-@media (min-width: 576px) and (max-width: 991.98px) {
-    .waveBack,
-    .waveFront {
-        height: 55px;
-    } 
-
-    .waveFront {
-        margin-top: -55px;
-    }
-
-    @keyframes waveBackAnim {
-        100% {
-            background-position-x: -960px;
-        }
-    }
-    
-    @keyframes waveFrontAnim {
-        100% {
-            background-position-x: 960px;
         }
     }
 }

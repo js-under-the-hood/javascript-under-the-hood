@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./Loading.css";
+import styles from "./Loading.css";
 
 const Loading = () => (
-    <p className="loading">
+    <p className={styles.loading}>
         <span>Loading</span>
-        <span className="dot">.</span>
-        <span className="dot">.</span>
-        <span className="dot">.</span>
+        <span className={styles.dot}>.</span>
+        <span className={styles.dot}>.</span>
+        <span className={styles.dot}>.</span>
     </p>
 );
 

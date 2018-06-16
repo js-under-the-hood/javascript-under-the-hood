@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./GitHubLogo.css";
+import styles from "./GitHubLogo.css";
 
 const GitHubLogo = ({ classNameSVG, classNamePath }) => {
-    const pathClassName = ["gitHubLogoPathSVG", classNamePath].join(" ").trim();
+    const pathClassName = [styles.gitHubLogoPathSVG, classNamePath].join(" ").trim();
     return (
         <svg id="gitHubLogoSVG" className={classNameSVG} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 100">
             <title>gitHub</title>

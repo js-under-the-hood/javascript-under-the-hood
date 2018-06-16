@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { getComponentClassName } from "../../../helpers";
-import "./Iceberg.css";
+import styles from "./Iceberg.css";
 
 const Iceberg = ({ className }) => {
-    const icebergClassName = getComponentClassName(["iceberg", className]);
+    const icebergClassName = getComponentClassName([styles.iceberg, className]);
     return <div className={icebergClassName} />
 };
 

@@ -30,26 +30,22 @@
     }
 }
 
-@media (max-width: 575.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .atmosphere {
-        height: 280px;
+        height: 600px;
     }
 
     .atmosphereTitle {
-        margin-top: 100px;
-    }
-
-    .icebergJS {
-        animation: icebergAnim 1000ms ease-in-out infinite alternate;
+        margin-top: 170px;
     }
 
     @keyframes icebergAnim {
         0% {
-            top: 120px;
+            top: 95px;
             transform: rotate(0deg);
         }
         100% {
-            top: 125px;
+            top: 100px;
             transform: rotate(-1deg);
         }
     }
@@ -71,6 +67,31 @@
         }
         100% {
             top: 115px;
+            transform: rotate(-1deg);
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .atmosphere {
+        height: 280px;
+    }
+
+    .atmosphereTitle {
+        margin-top: 100px;
+    }
+
+    .icebergJS {
+        animation: icebergAnim 1000ms ease-in-out infinite alternate;
+    }
+
+    @keyframes icebergAnim {
+        0% {
+            top: 120px;
+            transform: rotate(0deg);
+        }
+        100% {
+            top: 125px;
             transform: rotate(-1deg);
         }
     }

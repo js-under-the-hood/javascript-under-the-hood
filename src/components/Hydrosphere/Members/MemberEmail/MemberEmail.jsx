@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import Text from "../../../Text";
 
-import './MemberEmail.css';
+import styles from "./MemberEmail.css";
 
 const MemberEmail = ({ email }) => {
     return (
-        <div className="emailContainer">
-            <Text value="email: " className="email"/>
-            <Text value={email} className="emailValue"/>
+        <div className={styles.emailContainer}>
+            <Text value="email: " className={styles.email}/>
+            <Text value={email} className={styles.emailValue}/>
         </div>
     );
 };

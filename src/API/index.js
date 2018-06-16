@@ -4,4 +4,8 @@ const gitHubUserFetch = (username, token) => {
     })
 };
 
-export { gitHubUserFetch };
+const tokenFetch = () => {
+    return fetch("http://5b1e64c24d4fc00014b07db2.mockapi.io/token");
+};
+
+export { gitHubUserFetch, tokenFetch };

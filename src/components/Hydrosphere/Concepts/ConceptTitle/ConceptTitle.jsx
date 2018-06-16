@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import Title from "../../../Title";
 
-import "./ConceptTitle.css";
+import styles from "./ConceptTitle.css";
 
 const ConceptTitle = ({ value }) => (
     <Title
-        className="conceptTitle"
+        className={styles.conceptTitle}
         value={value}
     />
 );

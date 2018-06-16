@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import Title from "../../../Title";
 
-import "./MemberName.css";
+import styles from "./MemberName.css";
 
 const MemberName = ({ value }) => (
     <Title
-        className="memberName"
+        className={styles.memberName}
         value={value}
         uppercase
     />

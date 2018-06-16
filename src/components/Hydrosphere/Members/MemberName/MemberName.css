@@ -1,12 +1,20 @@
 .memberName {
     font-size: 28px;
-    white-space: nowrap;
     font-weight: bold;
     cursor: default;
+    white-space: pre-wrap;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* --- */
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    /* --- */
 }
 
 @media (max-width: 575.98px) {
     .memberName {
-        font-size: 20px;
+        font-size: 18px;
     }
 }

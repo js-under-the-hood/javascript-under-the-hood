@@ -1,0 +1,218 @@
+.concepts {
+    position: relative;
+    padding-top: 20px;
+}
+
+.conceptsWrapper {
+    position: relative;
+    margin-top: 120px;
+    text-align: center;
+    z-index: 30;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conceptsWrapper:before, .conceptsWrapper:after {
+    content: "";
+    width: 100%;
+    order: 1;
+}
+
+.jsConcept:nth-child(n + 3) {
+    order: 1;
+}
+
+.jsConcept:nth-child(even) {
+    margin-left: 80px;
+}
+
+.jsConcept:nth-child(odd) {
+    margin-right: 80px;
+}
+
+.jsConcept:after,
+.jsConcept:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+}
+
+.jsConcept:nth-child(1):after,
+.jsConcept:nth-child(2):after {
+    height: 450px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -4px;
+}
+
+.jsConcept:nth-child(1):after {
+    background: linear-gradient(to bottom, #4bbbe9 0%, #004696 100%);
+    transform-origin: 8px 446px;
+    transform: rotate(30deg);
+}
+
+.jsConcept:nth-child(2):after {
+    background: linear-gradient(to bottom, #39b2e0 0%, #004696 100%);
+    transform-origin: 0px 446px;
+    transform: rotate(-30deg);
+}
+
+.jsConcept:nth-child(3):before,
+.jsConcept:nth-child(4):before {
+    height: 8px;
+    width: 50px;
+    background-color: #004696;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.jsConcept:nth-child(3):before {
+    left: 100%;
+}
+
+.jsConcept:nth-child(4):before {
+    right: 100%;
+}
+
+.jsConcept:nth-child(3):after,
+.jsConcept:nth-child(4):after {
+    height: 740px;
+    bottom: 50%;
+    background: linear-gradient(to bottom, #39b2e0 0%, #004696 80%, #004696 100%);
+}
+
+.jsConcept:nth-child(3):after {
+    right: -50px;
+}
+
+.jsConcept:nth-child(4):after {
+    left: -50px;
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .jsConcept:nth-child(even),
+    .jsConcept:nth-child(odd) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .jsConcept {
+        margin-bottom: 50px;
+    }
+
+    .jsConcept:nth-child(3):before,
+    .jsConcept:nth-child(4):before {
+        height: 8px;
+        width: 35px;
+    }
+
+    .jsConcept:nth-child(3):after {
+        right: -35px;
+        height: 620px;
+    }
+    
+    .jsConcept:nth-child(4):after {
+        left: -35px;
+        height: 620px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .jsConcept {
+        margin-bottom: 30px;
+    }
+
+    .jsConcept:nth-child(even),
+    .jsConcept:nth-child(odd) {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .jsConcept:nth-child(3):before,
+    .jsConcept:nth-child(4):before {
+        height: 8px;
+        width: 25px;
+    }
+
+    .jsConcept:nth-child(3):after {
+        right: -25px;
+        height: 620px;
+    }
+    
+    .jsConcept:nth-child(4):after {
+        left: -25px;
+        height: 620px;
+    }
+
+    .jsConcept:after,
+    .jsConcept:before {
+        width: 6px;
+    }
+
+    .jsConcept:nth-child(3):before,
+    .jsConcept:nth-child(4):before {
+        height: 6px;
+    }
+
+    .jsConcept:nth-child(1):after,
+    .jsConcept:nth-child(2):after {
+        height: 358px;
+    }
+
+    .jsConcept:nth-child(1):after {
+        transform-origin: 4px 338px;
+        transform: rotate(26deg);
+    }
+    
+    .jsConcept:nth-child(2):after {
+        transform-origin: 0px 338px;
+        transform: rotate(-26deg)
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .concepts {
+        padding-top: 15px;
+    }
+    
+    .conceptsWrapper {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jsConcept:nth-child(even),
+    .jsConcept:nth-child(odd) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .jsConcept:after,
+    .jsConcept:before {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 575.98px) {
+    .concepts {
+        padding-top: 10px;
+    }
+    
+    .conceptsWrapper {
+        margin-top: 20px;
+    }
+
+    .jsConcept:nth-child(even),
+    .jsConcept:nth-child(odd) {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .jsConcept:after,
+    .jsConcept:before {
+        display: none;
+    }
+}

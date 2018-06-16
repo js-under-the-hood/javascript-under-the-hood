@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import { getComponentClassName } from "../../../helpers";
-import "./Wave.css";
+
+import styles from "./Wave.css";
 
 const Wave = ({ containerClassName, frontWaveClassName }) => {
-    const waveClassName = getComponentClassName(["wave", containerClassName]);
-    const waveFrondClassName = getComponentClassName(["waveFront", frontWaveClassName]);
+    const waveClassName = getComponentClassName([styles.wave, containerClassName]);
+    const waveFrondClassName = getComponentClassName([styles.waveFront, frontWaveClassName]);
     return (
         <div className={waveClassName}>
-            <div className="waveBack"/>
-            <div className={waveFrondClassName}/>
+            <div className={styles.waveBack} />
+            <div className={waveFrondClassName} />
         </div>
     );
 };

@@ -1,15 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import MenuItem from "../MenuItem";
 
-import './Menu.css';
+import styles from "./Menu.css";
 
 const Menu = ({ items }) => (
-    <nav className="menu">
-        <ul className="menuItems">
+    <nav className={styles.menu}>
+        <ul className={styles.menuItems}>
             {
                 items.map(({ value, href }) => (
-                    <MenuItem key={value} link={href} value={value} />
+                    <MenuItem
+                        key={value}
+                        link={href}
+                        value={value}
+                    />
                 ))
             }
         </ul>

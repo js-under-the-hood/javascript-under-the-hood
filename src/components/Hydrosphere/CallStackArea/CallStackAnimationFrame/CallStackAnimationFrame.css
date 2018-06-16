@@ -1,0 +1,766 @@
+.callStackAnimationFrame {
+    margin: 0px auto; 
+}
+
+/* ======= SASS ======= */
+
+/*
+
+$top_space: 50;
+$frameHeight: 43;
+$frameMarginTop: 3;
+$animStartMarginLeft_add: -300;
+$animEndMarginLeft_add: 3;
+$animStartMarginLeft_remove: $animEndMarginLeft_add;
+$animEndMarginLeft_remove: -$animStartMarginLeft_add;
+
+$animationMaximumDuration: 2000;
+
+@for $i from 1 through 12 {
+    $marginBottom: ((9 - $i) * $frameMarginTop + (11 - $i) * $frameHeight) + ($i - 1) * $frameMarginTop + $top_space;
+    @if $i > 10 {
+        $marginBottom: ((9 - 10) * $frameMarginTop + (11 - 10) * $frameHeight) + (10 - 1) * $frameMarginTop + $top_space;      
+    }
+
+    // ==== ADD ANIMATION ====
+
+    $S: -$animStartMarginLeft_add - $animEndMarginLeft_add + $marginBottom;
+    $duration: round($S * $animationMaximumDuration / 801) + ms;
+
+    .add_#{$i} {
+        opacity: 0;
+        animation: add_#{$i} $duration 0s linear forwards 1;
+    }
+    
+    @keyframes add_#{$i} {
+        0% {
+            opacity: 0;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animStartMarginLeft_add + px;
+        }
+        20% {
+            opacity: 1;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animStartMarginLeft_add + px;
+        }
+        60% {
+            opacity: 1;
+            margin-bottom: $marginBottom + px; 
+            margin-left: $animEndMarginLeft_add + px;
+        }
+        100% {
+            opacity: 1;
+            margin-bottom: 0;
+            margin-left: $animEndMarginLeft_add + px;
+        }
+    }
+
+    // ==== END ADD ANIMATION ====
+
+    // ==== REMOVE ANIMATION ====
+
+    .remove_#{$i} {
+        animation: remove_#{$i} $duration 0s linear forwards 1;
+        opacity: 1;
+    }
+
+    @keyframes remove_#{$i} {
+        0% {
+            opacity: 1;
+            margin-bottom: 0;
+            margin-left: $animStartMarginLeft_remove + px;
+        }
+        50% {
+            opacity: 1;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animStartMarginLeft_remove + px;
+        }
+        80% {
+            opacity: 1;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animEndMarginLeft_remove + px;
+        }
+        100% {
+            opacity: 0;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animEndMarginLeft_remove + px;
+        }
+    }
+
+    // ==== END REMOVE ANIMATION ====
+}
+*/
+
+/* ======= CSS ======= */
+
+.add_1 {
+    opacity: 0;
+    animation: add_1 2000ms 0s linear forwards 1;
+}
+
+@keyframes add_1 {
+    0% {
+        opacity: 0;
+        margin-bottom: 504px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 504px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 504px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_1 {
+    animation: remove_1 2000ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_1 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 504px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 504px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 504px;
+        margin-left: 300px;
+    }
+}
+
+.add_2 {
+    opacity: 0;
+    animation: add_2 1893ms 0s linear forwards 1;
+}
+
+@keyframes add_2 {
+    0% {
+        opacity: 0;
+        margin-bottom: 461px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 461px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 461px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_2 {
+    animation: remove_2 1893ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_2 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 461px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 461px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 461px;
+        margin-left: 300px;
+    }
+}
+
+.add_3 {
+    opacity: 0;
+    animation: add_3 1785ms 0s linear forwards 1;
+}
+
+@keyframes add_3 {
+    0% {
+        opacity: 0;
+        margin-bottom: 418px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 418px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 418px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_3 {
+    animation: remove_3 1785ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_3 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 418px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 418px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 418px;
+        margin-left: 300px;
+    }
+}
+
+.add_4 {
+    opacity: 0;
+    animation: add_4 1678ms 0s linear forwards 1;
+}
+
+@keyframes add_4 {
+    0% {
+        opacity: 0;
+        margin-bottom: 375px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 375px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 375px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_4 {
+    animation: remove_4 1678ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_4 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 375px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 375px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 375px;
+        margin-left: 300px;
+    }
+}
+
+.add_5 {
+    opacity: 0;
+    animation: add_5 1571ms 0s linear forwards 1;
+}
+
+@keyframes add_5 {
+    0% {
+        opacity: 0;
+        margin-bottom: 332px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 332px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 332px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_5 {
+    animation: remove_5 1571ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_5 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 332px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 332px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 332px;
+        margin-left: 300px;
+    }
+}
+
+.add_6 {
+    opacity: 0;
+    animation: add_6 1463ms 0s linear forwards 1;
+}
+
+@keyframes add_6 {
+    0% {
+        opacity: 0;
+        margin-bottom: 289px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 289px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 289px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_6 {
+    animation: remove_6 1463ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_6 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 289px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 289px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 289px;
+        margin-left: 300px;
+    }
+}
+
+.add_7 {
+    opacity: 0;
+    animation: add_7 1356ms 0s linear forwards 1;
+}
+
+@keyframes add_7 {
+    0% {
+        opacity: 0;
+        margin-bottom: 246px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 246px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 246px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_7 {
+    animation: remove_7 1356ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_7 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 246px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 246px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 246px;
+        margin-left: 300px;
+    }
+}
+
+.add_8 {
+    opacity: 0;
+    animation: add_8 1248ms 0s linear forwards 1;
+}
+
+@keyframes add_8 {
+    0% {
+        opacity: 0;
+        margin-bottom: 203px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 203px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 203px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_8 {
+    animation: remove_8 1248ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_8 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 203px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 203px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 203px;
+        margin-left: 300px;
+    }
+}
+
+.add_9 {
+    opacity: 0;
+    animation: add_9 1141ms 0s linear forwards 1;
+}
+
+@keyframes add_9 {
+    0% {
+        opacity: 0;
+        margin-bottom: 160px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 160px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 160px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_9 {
+    animation: remove_9 1141ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_9 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 160px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 160px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 160px;
+        margin-left: 300px;
+    }
+}
+
+.add_10 {
+    opacity: 0;
+    animation: add_10 1034ms 0s linear forwards 1;
+}
+
+@keyframes add_10 {
+    0% {
+        opacity: 0;
+        margin-bottom: 117px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_10 {
+    animation: remove_10 1034ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_10 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 117px;
+        margin-left: 300px;
+    }
+}
+
+.add_11 {
+    opacity: 0;
+    animation: add_11 1034ms 0s linear forwards 1;
+}
+
+@keyframes add_11 {
+    0% {
+        opacity: 0;
+        margin-bottom: 117px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_11 {
+    animation: remove_11 1034ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_11 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 117px;
+        margin-left: 300px;
+    }
+}
+
+.add_12 {
+    opacity: 0;
+    animation: add_12 1034ms 0s linear forwards 1;
+}
+
+@keyframes add_12 {
+    0% {
+        opacity: 0;
+        margin-bottom: 117px;
+        margin-left: -300px;
+    }
+    20% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: -300px;
+    }
+    60% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 3px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+}
+
+.remove_12 {
+    animation: remove_12 1034ms 0s linear forwards 1;
+    opacity: 1;
+}
+
+@keyframes remove_12 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3px;
+    }
+    50% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 3px;
+    }
+    80% {
+        opacity: 1;
+        margin-bottom: 117px;
+        margin-left: 300px;
+    }
+    100% {
+        opacity: 0;
+        margin-bottom: 117px;
+        margin-left: 300px;
+    }
+}

@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './MenuItem.css';
+import styles from "./MenuItem.css";
 
 const MenuItem = ({ link, value }) => (
-    <li className="menuItem">
+    <li className={styles.menuItem}>
         <a href={link}>{value}</a>
     </li>
 );

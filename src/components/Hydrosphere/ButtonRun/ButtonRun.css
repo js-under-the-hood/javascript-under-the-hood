@@ -1,0 +1,24 @@
+.buttonRun {
+    border: 1px solid #004696;
+    background: #20a0de;
+    color: #002855;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.buttonRun.disable {
+    background: linear-gradient(to right, #eee 0%,#e4e4e4 100%);
+    color: #898585;
+    border: 1px solid #898585;
+    cursor: not-allowed;
+}
+
+.buttonRun.disable:hover {
+    background: linear-gradient(to right, #eee 0%,#e4e4e4 100%);
+    box-shadow: none;
+}

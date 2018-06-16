@@ -25,6 +25,17 @@
     color: #20A0DE;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* --- */
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .menuItem a {
+        font-size: 24px;
+        margin: 0 8px;
+    }
+}
+
 @media (max-width: 575.98px) {
     .menuItem {
         height: 30px;
@@ -41,12 +52,5 @@
     
     .menuItem:hover a {
         color: #004696;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 991.98px) {
-    .menuItem a {
-        font-size: 24px;
-        margin: 0 8px;
     }
 }

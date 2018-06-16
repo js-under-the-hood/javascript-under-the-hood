@@ -1,0 +1,29 @@
+.hydrosphere {
+    display: flex;
+    flex-direction: column;
+}
+
+.waterWave {
+    margin-top: -66px;
+}
+
+.frontWave {
+    position: relative;
+    z-index: 10;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* --- */
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .waterWave {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .waterWave {
+        margin-top: -33px;
+    }
+}

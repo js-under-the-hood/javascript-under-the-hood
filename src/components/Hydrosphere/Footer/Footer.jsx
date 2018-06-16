@@ -1,12 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Text from "../../Text";
 
-import "./Footer.css";
+import styles from "./Footer.css";
 
 const Footer = () => (
-    <div className="footer">
-        <Text value="Armenian Code Academy" className="footerText"/>
+    <div className={styles.footer}>
+        <Text value="Armenian Code Academy" className={styles.footerText}/>
     </div>
 );
 

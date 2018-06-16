@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { getComponentClassName } from "../../../../helpers";
-import "./Fish.css";
+import styles from "./Fish.css";
 
 const Fish = ({ className }) => {
-    const fishClassName = getComponentClassName(["fish", className]);
+    const fishClassName = getComponentClassName([styles.fish, className]);
     return <div className={fishClassName} />
 };
 

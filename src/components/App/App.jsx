@@ -3,11 +3,9 @@ import Atmosphere from "../Atmosphere";
 import Hydrosphere from "../Hydrosphere";
 
 import styles from "./App.css";
-console.log(styles);
-//import "./App.css";
 
 const App = () => (
-    <div className="app">
+    <div className={styles.app}>
         <Atmosphere />
         <Hydrosphere />
     </div>

@@ -1,11 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-import "./ConceptButton.css";
+import styles from "./ConceptButton.css";
 
-const ConceptButton = () => (
-    <div className="conceptButton">
-        <span>Try yourself</span>
+const ConceptButton = ({ href }) => (
+    <div className={styles.conceptButton}>
+        <a href={href}>Try yourself</a>
     </div>
 );
+
+ConceptButton.propTypes = {
+    href: PropTypes.string.isRequired,
+};
 
 export default ConceptButton;

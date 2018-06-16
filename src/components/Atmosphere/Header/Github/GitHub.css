@@ -35,6 +35,21 @@
     fill: #20A0DE;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* --- */
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .github  {
+        padding: 0 8px;
+    }
+
+    .githubText {
+        margin-right: 4px;
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 575.98px) {
     .github {
         height: 30px;
@@ -52,16 +67,5 @@
 
     .github:hover .githubLogoPath {
         fill: #004696;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 991.98px) {
-    .github  {
-        padding: 0 8px;
-    }
-
-    .githubText {
-        margin-right: 4px;
-        font-size: 24px;
     }
 }

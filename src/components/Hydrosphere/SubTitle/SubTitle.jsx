@@ -2,16 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import Title from "../../Title";
 
-import "./SubTitle.css";
+import styles from "./SubTitle.css";
 
 const SubTitle = ({ value }) => (
     <Title 
-        className="subTitle"
+        className={styles.subTitle}
         value={value}
         uppercase
     />
 );
-
 
 SubTitle.propTypes = {
     value: PropTypes.string.isRequired,
