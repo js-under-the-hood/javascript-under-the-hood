@@ -1,9 +1,0 @@
-.twitterButton {
-    width: 50px;
-    height: 50px;
-    background-image: url("./twitter.png");
-    background-size: cover;
-    float: left;
-    cursor: pointer;
-    margin-right: 5px;
-}

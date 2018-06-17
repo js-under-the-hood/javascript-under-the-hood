@@ -46,11 +46,23 @@ function c() {
 a();`
 );
 
-const socials = {
-    facebook: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood&amp;src=sdkpreparse",
-    twitter: "https://twitter.com/intent/tweet/complete?url=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood",
-    linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/javascript-under-the-hood/javascript-under-the-hood",
-    google: "https://plus.google.com/u/0/share?url=https://github.com/javascript-under-the-hood/javascript-under-the-hood"
-};
+const socials = [
+   {
+        className: "facebook",
+        link: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood&amp;src=sdkpreparse",
+   },
+   {
+        className: "twitter",
+        twitter: "https://twitter.com/intent/tweet/complete?url=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood",
+   }, 
+   {
+        className: "linkedIn",
+        linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/javascript-under-the-hood/javascript-under-the-hood",
+   },
+   {
+        className: "google",
+        google: "https://plus.google.com/u/0/share?url=https://github.com/javascript-under-the-hood/javascript-under-the-hood"
+   }
+];
 
 export { fishData, conceptsData, gitHubUsers, editorInitialCode, socials };
