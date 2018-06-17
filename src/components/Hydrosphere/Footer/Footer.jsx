@@ -14,9 +14,14 @@ class Footer extends Component {
     render() {
         return (
             <div className={styles.footer}>
+                <Text value="Share with friends" className={styles.footerText} />
                { 
                     socials.map(item => (
-                        <Social key={item.className} className={styles[item.className]} onClick={() => this.shareHandler(item.link)} />
+                        <Social 
+                            key={item.className} 
+                            className={styles[item.className]} 
+                            onClick={() => this.shareHandler(item.link)} 
+                        />
                     ))
                 }
             </div>
