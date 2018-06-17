@@ -53,15 +53,15 @@ const socials = [
    },
    {
         className: "twitter",
-        twitter: "https://twitter.com/intent/tweet/complete?url=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood",
+        link: "https://twitter.com/intent/tweet/complete?url=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood",
    }, 
    {
         className: "linkedIn",
-        linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/javascript-under-the-hood/javascript-under-the-hood",
+        link: "https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/javascript-under-the-hood/javascript-under-the-hood",
    },
    {
         className: "google",
-        google: "https://plus.google.com/u/0/share?url=https://github.com/javascript-under-the-hood/javascript-under-the-hood"
+        link: "https://plus.google.com/u/0/share?url=https://github.com/javascript-under-the-hood/javascript-under-the-hood"
    }
 ];
 

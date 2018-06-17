@@ -16,7 +16,7 @@ class Footer extends Component {
             <div className={styles.footer}>
                { 
                     socials.map(item => (
-                        <Social key={item.className} className={styles[item.className]} onClick={()=>this.shareHandler(item.link)} />
+                        <Social key={item.className} className={styles[item.className]} onClick={() => this.shareHandler(item.link)} />
                     ))
                 }
             </div>
