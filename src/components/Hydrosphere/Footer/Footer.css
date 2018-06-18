@@ -9,4 +9,22 @@
 
 .footerText {
     color: #eee;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.facebook {
+    background-image: url("./facebook.png");
+}
+
+.twitter {
+    background-image: url("./twitter.png");
+}
+
+.linkedIn {
+    background-image: url("./linkedIn.png");
+}
+
+.google {
+    background-image: url("./google.png");
 }

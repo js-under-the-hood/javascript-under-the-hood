@@ -46,4 +46,23 @@ function c() {
 a();`
 );
 
-export { fishData, conceptsData, gitHubUsers, editorInitialCode };
+const socials = [
+   {
+        className: "facebook",
+        link: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood&amp;src=sdkpreparse",
+   },
+   {
+        className: "twitter",
+        link: "https://twitter.com/intent/tweet/complete?url=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood",
+   }, 
+   {
+        className: "linkedIn",
+        link: "https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/javascript-under-the-hood/javascript-under-the-hood",
+   },
+   {
+        className: "google",
+        link: "https://plus.google.com/u/0/share?url=https://github.com/javascript-under-the-hood/javascript-under-the-hood"
+   }
+];
+
+export { fishData, conceptsData, gitHubUsers, editorInitialCode, socials };

@@ -1,12 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 import Text from "../../Text";
+import Social from './Social';
+import {socials} from '../../../data/hydrosphereData';
 
 import styles from "./Footer.css";
 
-const Footer = () => (
-    <div className={styles.footer}>
-        <Text value="Armenian Code Academy" className={styles.footerText}/>
-    </div>
-);
+class Footer extends Component {
+
+    shareHandler = (href) => {
+        window.open(href);
+    };
+    
+    render() {
+        return (
+            <div className={styles.footer}>
+                <Text value="Share with friends" className={styles.footerText} />
+               { 
+                    socials.map(item => (
+                        <Social 
+                            key={item.className} 
+                            className={styles[item.className]} 
+                            onClick={() => this.shareHandler(item.link)} 
+                        />
+                    ))
+                }
+            </div>
+        );
+    }
+    
+};
 
 export default Footer;
