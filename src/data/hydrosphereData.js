@@ -9,7 +9,7 @@ const conceptsData = [
     {
         title: "call stack",
         description: "A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run, what functions are called from within that function and should be called next, etc.",
-        url: "#explanationCallStack",
+        url: "callStack",
     },
     {
         title: "hoisting",
@@ -30,7 +30,14 @@ const conceptsData = [
 
 const gitHubUsers = ["arturvardanyan", "vardgeshamazaspyan", "tatevgrigoryan", "martineghiazaryan", "anisargsian"];
 
-const editorInitialCode = (
+const codeExamples = [
+    {
+        name: "your code",
+        code: "",
+    },
+    {
+        name: "a, b, c",
+        code: (
 `function a() {
     b();
 }
@@ -44,6 +51,53 @@ function c() {
 }
 
 a();`
-);
+        ),
+    },
+    { 
+        name: "recursion",
+        code: (
+`const factorial = (n) => {
+    if (n === 1) return 1;
+    return n * factorial(n - 1);
+}
 
-export { fishData, conceptsData, gitHubUsers, editorInitialCode };
+const a = factorial(5);`
+        ),
+    },
+    { 
+        name: "setTimeout",
+        code: (
+`const foo = () => "foo";
+const bar = () => "bar";
+const baz = () => "baz";
+
+setTimeout(() => {
+
+    setTimeout(() => {
+        baz();
+    }, 0);
+    
+    foo();
+}, 1000);
+
+bar();`
+        ),
+    }
+];
+
+const socials = [
+    {
+        className: "facebook",
+        link: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood&amp;src=sdkpreparse",
+    },
+    {
+        className: "twitter",
+        link: "https://twitter.com/intent/tweet/complete?url=https%3A%2F%2Fgithub.com%2Fjavascript-under-the-hood%2Fjavascript-under-the-hood",
+    }, 
+    {
+        className: "linkedIn",
+        link: "https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/javascript-under-the-hood/javascript-under-the-hood",
+    },
+];
+
+export { fishData, conceptsData, gitHubUsers, codeExamples, socials };

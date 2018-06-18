@@ -1,12 +1,33 @@
 .footer {
-    height: 70px;
     width: 100%;
     background-color: #163559;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .footerText {
     color: #eee;
+    font-size: 22px;
+    line-height: 24px;
+    margin: 8px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.facebook {
+    background-image: url("../../../assets/images/facebook.png");
+}
+
+.twitter {
+    background-image: url("../../../assets/images/twitter.png");
+}
+
+.linkedIn {
+    background-image: url("../../../assets/images/linkedIn.png");
 }

@@ -43,11 +43,11 @@ class Editor extends Component {
             <AceEditor 
                 mode="javascript"
                 theme="eclipse"
-                fontSize={16}
+                fontSize={20}
                 wrapEnabled={true}
                 ref={this.editor}
                 commands={editorCommands}
-                editorProps={{$blockScrolling: true}}
+                editorProps={{$blockScrolling: Infinity}}
                 className={className}
                 name={name}
                 onChange={onChange}

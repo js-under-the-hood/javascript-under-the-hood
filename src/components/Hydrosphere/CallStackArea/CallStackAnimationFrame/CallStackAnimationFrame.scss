@@ -1,0 +1,84 @@
+.callStackAnimationFrame {
+    margin: 0px auto; 
+}
+
+/* ======= SASS ======= */
+
+$top_space: 20;
+$frameHeight: 50;
+$frameMarginTop: 3;
+$animStartMarginLeft_add: -220;
+$animEndMarginLeft_add: 3;
+$animStartMarginLeft_remove: $animEndMarginLeft_add;
+$animEndMarginLeft_remove: -$animStartMarginLeft_add;
+$count: 7;
+$animationMaximumDuration: 3000;
+
+@for $i from 1 through 12 {
+    $marginBottom: ($count + 1 - $i) * $frameHeight + ($count - $i) * $frameMarginTop + $top_space;
+    @if $i > 7 {
+        $marginBottom: ($count + 1 - 7) * $frameHeight + ($count - 7) * $frameMarginTop + $top_space;    
+    }
+
+    // ==== ADD ANIMATION ====
+    $S: -$animStartMarginLeft_add - $animEndMarginLeft_add + $marginBottom;
+    $duration: round($S * $animationMaximumDuration / 801) + ms;
+
+    .add_#{$i} {
+        opacity: 0;
+        animation: add_#{$i} $duration 0s linear forwards 1;
+    }
+    
+    @keyframes add_#{$i} {
+        0% {
+            opacity: 0;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animStartMarginLeft_add + px;
+        }
+        20% {
+            opacity: 1;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animStartMarginLeft_add + px;
+        }
+        60% {
+            opacity: 1;
+            margin-bottom: $marginBottom + px; 
+            margin-left: $animEndMarginLeft_add + px;
+        }
+        100% {
+            opacity: 1;
+            margin-bottom: 0;
+            margin-left: $animEndMarginLeft_add + px;
+        }
+    }
+
+    // ==== REMOVE ANIMATION ====
+
+    .remove_#{$i} {
+        animation: remove_#{$i} $duration 0s linear forwards 1;
+        opacity: 1;
+    }
+
+    @keyframes remove_#{$i} {
+        0% {
+            opacity: 1;
+            margin-bottom: 0;
+            margin-left: $animStartMarginLeft_remove + px;
+        }
+        50% {
+            opacity: 1;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animStartMarginLeft_remove + px;
+        }
+        80% {
+            opacity: 1;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animEndMarginLeft_remove + px;
+        }
+        100% {
+            opacity: 0;
+            margin-bottom: $marginBottom + px;
+            margin-left: $animEndMarginLeft_remove + px;
+        }
+    }
+}

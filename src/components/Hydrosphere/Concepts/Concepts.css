@@ -117,6 +117,19 @@
         left: -35px;
         height: 620px;
     }
+
+    .jsConcept:nth-child(1):after,
+    .jsConcept:nth-child(2):after {
+        height: 390px;
+    }
+
+    .jsConcept:nth-child(1):after {
+        transform-origin: 8px 390px;
+    }
+    
+    .jsConcept:nth-child(2):after {
+        transform-origin: 0px 390px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {

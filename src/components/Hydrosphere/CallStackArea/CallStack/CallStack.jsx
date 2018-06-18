@@ -42,14 +42,14 @@ class CallStack extends Component {
         const animationClassNumber = staticCallStackLength + 1;
         let animationClassName = `${animationType}_${animationClassNumber}`;
 
-        if (staticCallStackLength >= 10) {
+        if (staticCallStackLength >= 7) {
             animationClassName = `${animationType}_${this.prevAnimationNumber === 11 ? 12 : 11}`;
             staticCallStackFrames = [
-                ...staticCallStackFrames.slice(0, 3),
+                ...staticCallStackFrames.slice(0, 2),
                 { id: -1, value: "empty_1" },
                 { id: -2, value: "empty_2" },
                 { id: -3, value: "empty_3" },
-                ...staticCallStackFrames.slice(-3)
+                ...staticCallStackFrames.slice(-1)
             ];
             this.prevAnimationNumber = Number(animationClassName.slice(-2));
         }

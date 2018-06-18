@@ -15,7 +15,7 @@
     background: linear-gradient(to right, #eee 0%,#e4e4e4 100%);
     color: #898585;
     border: 1px solid #898585;
-    cursor: not-allowed;
+    cursor: default;
 }
 
 .buttonRun.disable:hover {

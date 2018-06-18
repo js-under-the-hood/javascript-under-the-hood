@@ -22,8 +22,11 @@
 
 @media (max-width: 575.98px) {
     .header {
-        background: linear-gradient(to right, #178fca 0%, #20a0de 40%, #20a0de 60%, #178fca 100%);
         display: block;
         padding: 0;
+    }
+
+    .header li {
+        background: linear-gradient(to right, #178fca 0%, #20a0de 40%, #20a0de 60%, #178fca 100%);
     }
 }

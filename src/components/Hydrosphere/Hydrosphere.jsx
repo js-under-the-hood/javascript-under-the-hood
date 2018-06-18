@@ -5,19 +5,22 @@ import Concepts from "./Concepts";
 import ExplanationArea from "./ExplanationArea";
 import Members from "./Members";
 import Footer from "./Footer";
-import { fishData, conceptsData, gitHubUsers } from "../../data/hydrosphereData";
+import { BrowserRouter, Route } from "react-router-dom";
+import { fishData, conceptsData, gitHubUsers, socials } from "../../data/hydrosphereData";
 
 import styles from "./Hydrosphere.css";
 
 const Hydrosphere = () => (
-    <div className={styles.hydrosphere}>
-        <Wave containerClassName={styles.waterWave} frontWaveClassName={styles.frontWave} />
-        <Fishes data={fishData} />
-        <Concepts data={conceptsData} />
-        <ExplanationArea />
-        <Members gitHubUsers={gitHubUsers} />
-        <Footer />
-    </div>
+    <BrowserRouter>
+        <div className={styles.hydrosphere}>
+            <Wave containerClassName={styles.waterWave} frontWaveClassName={styles.frontWave} />
+            <Fishes data={fishData} />
+            <Concepts data={conceptsData} />
+            <Route path="/callStack" component={ExplanationArea} />
+            <Members gitHubUsers={gitHubUsers} />
+            <Footer socials={socials}/>
+        </div>
+    </BrowserRouter>
 );
 
 export default Hydrosphere;

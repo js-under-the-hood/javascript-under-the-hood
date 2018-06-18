@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import CallStackFrame from "../CallStackFrame";
 import { getComponentClassName } from "../../../../helpers";
 
-import styles from "./CallStackAnimationFrame.css";
+import styles from "./CallStackAnimationFrame.scss";
 
 const CallStackAnimationFrame = ({ id, value, animationClassName, onFinish }) => {
     const className = getComponentClassName([styles.callStackAnimationFrame, styles[animationClassName]]);

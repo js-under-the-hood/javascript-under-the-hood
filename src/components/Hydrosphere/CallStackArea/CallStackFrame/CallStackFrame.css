@@ -1,12 +1,13 @@
 .callStackFrame {
-    height: 40px;
-    width: 294px;
+    height: 50px;
+    width: 200px;
     background-color: #0f7efd;
     margin: 3px auto;
     margin-top: 0;
     border-radius: 4px;
-    color: #c9e2ff;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-size: 28px;
+    display: block;
 }
 
 .callStackFrame.transparent {
@@ -14,18 +15,23 @@
 }
 
 .callStackFrame .frameId {
-    height: 36px;
-    width: 36px;
+    float: left;
+    height: 38px;
+    width: 38px;
     background: #004696;
     border-radius: 50%;
-    float: left;
-    margin: 2px;
-    line-height: 36px;
+    margin: 6px 0 6px 2px;
+    line-height: 38px;
 }
 
 .callStackFrame .frameName {
-    width: 254px;
-    line-height: 40px;
+    float: right;
+    width: 160px;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 22px 0 2px;
 }
 
 .callStackFrame.transparent .frameId {
@@ -34,4 +40,5 @@
 
 .callStackFrame.transparent .frameName {
     color: #004696;
+    padding: 0 40px 0 2px;
 }

@@ -44,7 +44,7 @@ export const UNSAFE_deepCopy = object => JSON.parse(JSON.stringify(object));
 
 export const getCurrentCallStackItemEnter = (callStack, callStackItemID, callStackItemName) => {
     if (callStackItemName.substr(0, 6) === "$$ANON") {
-        callStackItemName = "anonymous";
+        callStackItemName = "anon";
     }
     const currentCallStackItem = [];
     if (callStack.length > 0) {
@@ -62,4 +62,8 @@ export const getCurrentCallStackItemLeave = (callStack) => {
     const prevCallStackItems = [...callStack[callStack.length - 1]];
     prevCallStackItems.pop();
     return prevCallStackItems;
+};
+
+export const issetTimeoutInterval = (text) => {
+    return text.indexOf("setTimeout") !== -1 || text.indexOf("setInterval") !== -1;
 };

@@ -1,0 +1,43 @@
+.radio {
+    height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    margin: 0 20px;
+}
+
+.codesForm {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 5px 0;
+}
+
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .radio {
+        height: 20px;
+        line-height: 20px;
+        font-size: 18px;
+        margin: 0 7px;
+    }
+    
+    .codesForm {
+        display: flex;
+        justify-content: center;
+        margin: 8px 0 5px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .radio {
+        height: 20px;
+        line-height: 20px;
+        font-size: 18px;
+        margin: 0 7px;
+    }
+    
+    .codesForm {
+        display: flex;
+        justify-content: center;
+        margin: 8px 0 5px 0;
+    }
+}
